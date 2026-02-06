@@ -213,7 +213,7 @@
     <div class="container inner">
       <!-- Left: Logo -->
       <a class="brand" href="#home" aria-label="Homefix Renovation — Home">
-        <img id="siteLogo" src="./assets/logo-homefix.png" alt="Homefix Renovation Logo" class="logo">
+        <img id="siteLogo" src=".logo-homefix.png" alt="Homefix Renovation Logo" class="logo">
       </a>
 
       <!-- Center: Title -->
@@ -294,35 +294,35 @@
     <div class="section-title"><h2>Projects</h2><span class="muted">Selected works</span></div>
     <div class="slider card">
       <div class="slides" id="slides">
-        <div class="slide"><img src="assets/1.jpg" alt="Project 1"></div>
-        <div class="slide"><img src="assets/2.jpg" alt="Project  2"></div>
-        <div class="slide"><img src="assets/28.jpg" alt="Project 28"></div>
-        <div class="slide"><img src="assets/29.jpg" alt="Project 29"></div>
-        <div class="slide"><img src="assets/30.jpg" alt="Project 30"></div>
-        <div class="slide"><img src="assets/31.jpg" alt="Project 31"></div>
-        <div class="slide"><img src="assets/3.jpg" alt="Project 3"></div>
-        <div class="slide"><img src="assets/4.jpg" alt="Project 4"></div>
-        <div class="slide"><img src="assets/5.jpg" alt="Project 5"></div>
-        <div class="slide"><img src="assets/6.jpg" alt="Project 6"></div>
-        <div class="slide"><img src="assets/7.jpg" alt="Project 7"></div>
-        <div class="slide"><img src="assets/8.jpg" alt="Project 8"></div>
-        <div class="slide"><img src="assets/9.jpg" alt="Project 9"></div><div class="slide"><img src="assets/10.jpg" alt="Project 10"></div>
-  <div class="slide"><img src="assets/11.jpg" alt="Project 11"></div>
-  <div class="slide"><img src="assets/12.jpg" alt="Project 12"></div>
-  <div class="slide"><img src="assets/13.jpg" alt="Project 13"></div>
-  <div class="slide"><img src="assets/14.jpg" alt="Project 14"></div>
-  <div class="slide"><img src="assets/15.jpg" alt="Project 15"></div>
-  <div class="slide"><img src="assets/16.jpg" alt="Project 16"></div>
-  <div class="slide"><img src="assets/17.jpg" alt="Project 17"></div>
-  <div class="slide"><img src="assets/18.jpg" alt="Project 18"></div>
-  <div class="slide"><img src="assets/19.jpg" alt="Project 19"></div>
-  <div class="slide"><img src="assets/20.jpg" alt="Project 20"></div>
-  <div class="slide"><img src="assets/21.jpg" alt="Project 21"></div>
-  <div class="slide"><img src="assets/22.jpg" alt="Project 22"></div>
-  <div class="slide"><img src="assets/23.jpg" alt="Project 23"></div>
-  <div class="slide"><img src="assets/25.jpg" alt="Project 25"></div>
-<div class="slide"><img src="assets/26.jpg" alt="Project 26"></div>
-<div class="slide"><img src="assets/27.jpg" alt="Project 27"></div>
+        <div class="slide"><img src="1.jpg" alt="Project 1"></div>
+        <div class="slide"><img src="2.jpg" alt="Project  2"></div>
+        <div class="slide"><img src="28.jpg" alt="Project 28"></div>
+        <div class="slide"><img src="29.jpg" alt="Project 29"></div>
+        <div class="slide"><img src="30.jpg" alt="Project 30"></div>
+        <div class="slide"><img src="31.jpg" alt="Project 31"></div>
+        <div class="slide"><img src="3.jpg" alt="Project 3"></div>
+        <div class="slide"><img src="4.jpg" alt="Project 4"></div>
+        <div class="slide"><img src="5.jpg" alt="Project 5"></div>
+        <div class="slide"><img src="6.jpg" alt="Project 6"></div>
+        <div class="slide"><img src="7.jpg" alt="Project 7"></div>
+        <div class="slide"><img src="8.jpg" alt="Project 8"></div>
+        <div class="slide"><img src="9.jpg" alt="Project 9"></div><div class="slide"><img src="assets/10.jpg" alt="Project 10"></div>
+  <div class="slide"><img src="11.jpg" alt="Project 11"></div>
+  <div class="slide"><img src="12.jpg" alt="Project 12"></div>
+  <div class="slide"><img src="13.jpg" alt="Project 13"></div>
+  <div class="slide"><img src="14.jpg" alt="Project 14"></div>
+  <div class="slide"><img src="15.jpg" alt="Project 15"></div>
+  <div class="slide"><img src="16.jpg" alt="Project 16"></div>
+  <div class="slide"><img src="17.jpg" alt="Project 17"></div>
+  <div class="slide"><img src="18.jpg" alt="Project 18"></div>
+  <div class="slide"><img src="19.jpg" alt="Project 19"></div>
+  <div class="slide"><img src="20.jpg" alt="Project 20"></div>
+  <div class="slide"><img src="21.jpg" alt="Project 21"></div>
+  <div class="slide"><img src="22.jpg" alt="Project 22"></div>
+  <div class="slide"><img src="23.jpg" alt="Project 23"></div>
+  <div class="slide"><img src="25.jpg" alt="Project 25"></div>
+<div class="slide"><img src="26.jpg" alt="Project 26"></div>
+<div class="slide"><img src="27.jpg" alt="Project 27"></div>
 
       </div>
       <button class="nav-btn prev" aria-label="Previous" onclick="prevSlide()">◀</button>
@@ -473,12 +473,12 @@
       var img = document.getElementById('siteLogo');
       if(!img) return;
       var candidates = [
-        './assets/logo-homefix.png',
-        'assets/logo-homefix.png',
-        'assets/logo-homefix.PNG',
-        'assets/Logo-homefix.png',
-        'assets/logo_homefix.png',
-        'assets/logo.png'
+        '.logo-homefix.png',
+        'logo-homefix.png',
+        'logo-homefix.PNG',
+        'Logo-homefix.png',
+        'logo_homefix.png',
+        'logo.png'
       ];
       var i = 0;
       img.onerror = function(){
