@@ -428,7 +428,8 @@
     function nextSlide(){index=(index+1)%slides.children.length;update()}
     function prevSlide(){index=(index-1+slides.children.length)%slides.children.length;update()}
     function update(){slides.style.transform=`translateX(-${index*100}%)`;[...dots.children].forEach((d,i)=>d.classList.toggle('active',i===index));}
-    function auto(){setInterval(()=>{nextSlide()},4000)}
+    function auto(){}
+    
     document.addEventListener('DOMContentLoaded',init);
 
     // Form -> WhatsApp + Email
