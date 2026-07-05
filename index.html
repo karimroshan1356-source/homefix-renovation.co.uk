@@ -14,7 +14,6 @@
   <meta name="theme-color" content="#e6f2ff" />
   <meta name="color-scheme" content="light" />
 
-
   <style>
     :root{
       --primary:#93c5fd;
@@ -63,32 +62,32 @@
 
     /* Left: brand/logo */
     .brand{display:flex;align-items:center;gap:10px;justify-self:start}
-   .brand .logo{
-  height:35px !important;
-  width:auto !important;
-  object-fit:contain;
-  position:relative;
-  top:-15px;        /* ← کمی بالاتر */
-  left:-5px;       /* ← کمی به سمت راست */
-}
+    .brand .logo{
+      height:35px !important;
+      width:auto !important;
+      object-fit:contain;
+      position:relative;
+      top:-15px;
+      left:-5px;
+    }
     @media (min-width:900px){
-      .brand .logo{ height:85px !important; } /* smaller logo on desktop */
+      .brand .logo{ height:85px !important; }
     }
 
     /* Center: site title */
     .site-title{
-  position:absolute;
-  left:50%;
-  top:50%;
-  transform:translate(-50%,-50%);
-  margin:0;
-  font-weight:800;
-  letter-spacing:.2px;
-  line-height:1.1;
-  font-size:clamp(22px,5vw,40px);
-  color:#0b1220;
-  text-align:center;
-}
+      position:absolute;
+      left:50%;
+      top:50%;
+      transform:translate(-50%,-50%);
+      margin:0;
+      font-weight:800;
+      letter-spacing:.2px;
+      line-height:1.1;
+      font-size:clamp(22px,5vw,40px);
+      color:#0b1220;
+      text-align:center;
+    }
 
     /* Right: desktop menu */
     .menu-desktop{display:none;gap:22px;align-items:center;justify-self:end}
@@ -141,27 +140,25 @@
     .slider{position:relative;overflow:hidden;border-radius:var(--radius);background:#f8fafc}
     .slides{display:flex;transition:transform .35s ease}
     .slide{min-width:100%}
-  .slides {
-  display: flex;
-  transition: transform 0.5s ease-in-out;
-  width: 100%; /* اطمینان از عرض کامل */
-}
-
-.slide {
-  min-width: 100%; /* هر اسلاید را مجبور می‌کند دقیقاً به اندازه کل صفحه باشد */
-  box-sizing: border-box;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.slide img {
-  width: 100%;
-  height: 550px;
-  object-fit: contain;
-  background: #f8fafc;
-  display: block;
-}
+    .slides {
+      display: flex;
+      transition: transform 0.5s ease-in-out;
+      width: 100%;
+    }
+    .slide {
+      min-width: 100%;
+      box-sizing: border-box;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .slide img {
+      width: 100%;
+      height: 550px;
+      object-fit: contain;
+      background: #f8fafc;
+      display: block;
+    }
 
     .nav-btn{position:absolute;top:50%;transform:translateY(-50%);border:0;background:#ffffffd9;padding:8px 10px;border-radius:10px;cursor:pointer}
     .prev{inset-inline-start:8px}.next{inset-inline-end:8px}
@@ -171,7 +168,8 @@
 
     /* ===== CONTACT CARDS ===== */
     .contact-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
-    @media (max-width:900px){.contact-grid{grid-template-columns:1fr}}    .contact-card{background:var(--soft-blue)}
+    @media (max-width:900px){.contact-grid{grid-template-columns:1fr}}
+    .contact-card{background:var(--soft-blue)}
     .contact-row{display:flex;align-items:flex-start;gap:12px}
     .icon{ width:28px;height:28px;flex:0 0 28px;display:inline-block }
     .contact-card h3{margin:0 0 8px}
@@ -194,7 +192,6 @@
     footer{padding:28px 0;color:#6b7280;border-top:1px solid var(--border)}
     .footer-grid{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
 
-    /* Compact tweaks for small phones */
     @media (max-width:520px){
       .card{padding:14px}
       .contact-row{gap:10px}
@@ -214,7 +211,7 @@
     <div class="container inner">
       <!-- Left: Logo -->
       <a class="brand" href="#home" aria-label="Homefix Renovation — Home">
-        <img id="siteLogo" src=".logo-homefix.png" alt="Homefix Renovation Logo" class="logo">
+        <img id="siteLogo" src="logo-homefix.png" alt="Homefix Renovation Logo" class="logo">
       </a>
 
       <!-- Center: Title -->
@@ -259,25 +256,28 @@
   </section>
 
   <!-- ===== SERVICES ===== -->
-  <article class="card">
-    <h3>Professional Carpentry & Joinery Specialists</h3>
-    <p class="muted">Doors & windows, cabinets, frames, and custom woodwork.</p>
-</article>
+  <section id="services" class="container">
+    <div class="section-title"><h2>Our Services</h2></div>
+    <div class="grid cols-3">
+      <article class="card">
+        <h3>Professional Carpentry & Joinery Specialists</h3>
+        <p class="muted">Doors & windows, cabinets, frames, and custom woodwork.</p>
+      </article>
 
-<article class="card">
-    <h3>Painting</h3>
-    <p class="muted">Interior/exterior painting, prep & filling.</p>
-</article>
+      <article class="card">
+        <h3>Painting</h3>
+        <p class="muted">Interior/exterior painting, prep & filling.</p>
+      </article>
 
-<article class="card">
-    <h3>Plumbing</h3>
-    <p class="muted">Installations & repairs, radiators and taps.</p>
-</article>
+      <article class="card">
+        <h3>Plumbing</h3>
+        <p class="muted">Installations & repairs, radiators and taps.</p>
+      </article>
 
-<article class="card">
-    <h3>Fit & Fix</h3>
-    <p class="muted">Install and adjust fixtures.</p>
-</article>
+      <article class="card">
+        <h3>Fit & Fix</h3>
+        <p class="muted">Install and adjust fixtures.</p>
+      </article>
     </div>
   </section>
 
@@ -297,23 +297,17 @@
       <div class="slides" id="slides">
         <div class="slide"><img src="01.jpg" alt="Project 01"></div>
         <div class="slide"><img src="02.jpg" alt="Project 02"></div>
-<div class="slide"><img src="03.jpg" alt="Project 03"></div>
-
-<div class="slide"><img src="05.jpg" alt="Project 05"></div>
-<div class="slide"><img src="06.jpg" alt="Project 06"></div>
-<div class="slide"><img src="07.jpg" alt="Project 07"></div>
-<div class="slide"><img src="08.jpg" alt="Project 08"></div>
-
+        <div class="slide"><img src="03.jpg" alt="Project 03"></div>
+        <div class="slide"><img src="04.jpg" alt="Project 04"></div>
+        <div class="slide"><img src="05.jpg" alt="Project 05"></div>
+        <div class="slide"><img src="06.jpg" alt="Project 06"></div>
+        <div class="slide"><img src="07.jpg" alt="Project 07"></div>
+        <div class="slide"><img src="08.jpg" alt="Project 08"></div>
         <div class="slide"><img src="09.jpg" alt="Project 09"></div>
-<div class="slide"><img src="010.jpg" alt="Project 010"></div>
-<div class="slide"><img src="011.jpg" alt="Project 011"></div>
-
+        <div class="slide"><img src="010.jpg" alt="Project 010"></div>
+        <div class="slide"><img src="011.jpg" alt="Project 011"></div>
         <div class="slide"><img src="1.jpg" alt="Project 1"></div>
-        <div class="slide"><img src="2.jpg" alt="Project  2"></div>
-        <div class="slide"><img src="28.jpg" alt="Project 28"></div>
-        <div class="slide"><img src="29.jpg" alt="Project 29"></div>
-        <div class="slide"><img src="30.jpg" alt="Project 30"></div>
-        <div class="slide"><img src="31.jpg" alt="Project 31"></div>
+        <div class="slide"><img src="2.jpg" alt="Project 2"></div>
         <div class="slide"><img src="3.jpg" alt="Project 3"></div>
         <div class="slide"><img src="4.jpg" alt="Project 4"></div>
         <div class="slide"><img src="5.jpg" alt="Project 5"></div>
@@ -322,23 +316,26 @@
         <div class="slide"><img src="8.jpg" alt="Project 8"></div>
         <div class="slide"><img src="9.jpg" alt="Project 9"></div>
         <div class="slide"><img src="10.jpg" alt="Project 10"></div>
-  <div class="slide"><img src="11.jpg" alt="Project 11"></div>
-  <div class="slide"><img src="12.jpg" alt="Project 12"></div>
-  <div class="slide"><img src="13.jpg" alt="Project 13"></div>
-  <div class="slide"><img src="14.jpg" alt="Project 14"></div>
-  <div class="slide"><img src="15.jpg" alt="Project 15"></div>
-  <div class="slide"><img src="16.jpg" alt="Project 16"></div>
-  <div class="slide"><img src="17.jpg" alt="Project 17"></div>
-  <div class="slide"><img src="18.jpg" alt="Project 18"></div>
-  <div class="slide"><img src="19.jpg" alt="Project 19"></div>
-  <div class="slide"><img src="20.jpg" alt="Project 20"></div>
-  <div class="slide"><img src="21.jpg" alt="Project 21"></div>
-  <div class="slide"><img src="22.jpg" alt="Project 22"></div>
-  <div class="slide"><img src="23.jpg" alt="Project 23"></div>
-  <div class="slide"><img src="25.jpg" alt="Project 25"></div>
-<div class="slide"><img src="26.jpg" alt="Project 26"></div>
-<div class="slide"><img src="27.jpg" alt="Project 27"></div>
-
+        <div class="slide"><img src="11.jpg" alt="Project 11"></div>
+        <div class="slide"><img src="12.jpg" alt="Project 12"></div>
+        <div class="slide"><img src="13.jpg" alt="Project 13"></div>
+        <div class="slide"><img src="14.jpg" alt="Project 14"></div>
+        <div class="slide"><img src="15.jpg" alt="Project 15"></div>
+        <div class="slide"><img src="16.jpg" alt="Project 16"></div>
+        <div class="slide"><img src="17.jpg" alt="Project 17"></div>
+        <div class="slide"><img src="18.jpg" alt="Project 18"></div>
+        <div class="slide"><img src="19.jpg" alt="Project 19"></div>
+        <div class="slide"><img src="20.jpg" alt="Project 20"></div>
+        <div class="slide"><img src="21.jpg" alt="Project 21"></div>
+        <div class="slide"><img src="22.jpg" alt="Project 22"></div>
+        <div class="slide"><img src="23.jpg" alt="Project 23"></div>
+        <div class="slide"><img src="25.jpg" alt="Project 25"></div>
+        <div class="slide"><img src="26.jpg" alt="Project 26"></div>
+        <div class="slide"><img src="27.jpg" alt="Project 27"></div>
+        <div class="slide"><img src="28.jpg" alt="Project 28"></div>
+        <div class="slide"><img src="29.jpg" alt="Project 29"></div>
+        <div class="slide"><img src="30.jpg" alt="Project 30"></div>
+        <div class="slide"><img src="31.jpg" alt="Project 31"></div>
       </div>
       <button class="nav-btn prev" aria-label="Previous" onclick="prevSlide()">◀</button>
       <button class="nav-btn next" aria-label="Next" onclick="nextSlide()">▶</button>
@@ -353,16 +350,21 @@
       <form id="requestForm" class="card">
         <div class="row">
           <div><label>Name</label><input name="name" placeholder="e.g., Saeed" required /></div>
-          <div><label>Phone</label><input name="phone" placeholder="07XXXXXXXXX" pattern="^\\d{10,15}$" required /></div>
+          <div><label>Phone</label><input name="phone" placeholder="07XXXXXXXXX" pattern="^\d{10,15}$" required /></div>
         </div>
         <div class="row2" style="margin-top:12px">
           <div><label>Email</label><input type="email" name="email" placeholder="you@example.com" /></div>
           <div>
             <label>Service</label>
             <select name="service" required>
-              <option value="" disabled selected>Select…</option> <option>Construction & Building
-             </option> <option>Painting</option><option>Plumbing</option><option>Joinery</option>
-              <option>Fit & Fix</option><option>Room in Roof Insulation</option><option>Other</option>
+              <option value="" disabled selected>Select…</option>
+              <option>Construction & Building</option>
+              <option>Painting</option>
+              <option>Plumbing</option>
+              <option>Joinery</option>
+              <option>Fit & Fix</option>
+              <option>Room in Roof Insulation</option>
+              <option>Other</option>
             </select>
           </div>
         </div>
@@ -415,7 +417,7 @@
           </svg>
           <div>
             <h3 style="margin:0">Email</h3>
-           <p class="muted"><a href="mailto:homefixrenovation@hotmail.com">homefixrenovation@hotmail.com</a></p>
+            <p class="muted"><a href="mailto:homefixrenovation@hotmail.com">homefixrenovation@hotmail.com</a></p>
           </div>
         </div>
       </div>
@@ -431,10 +433,8 @@
   </footer>
 
   <script>
-    // Set current year
     document.getElementById('y').textContent = new Date().getFullYear();
 
-    // Slider
     let index=0;const slides=document.getElementById('slides');const dots=document.getElementById('dots');
     function dotTemplate(i){const d=document.createElement('div');d.className='dot'+(i===0?' active':'');d.onclick=()=>go(i);return d}
     function init(){const count=slides.children.length;for(let i=0;i<count;i++)dots.appendChild(dotTemplate(i));auto();}
@@ -446,7 +446,6 @@
     
     document.addEventListener('DOMContentLoaded',init);
 
-    // Form -> WhatsApp + Email
     (function(){
       const form=document.getElementById('requestForm');
       if(!form) return;
@@ -461,15 +460,14 @@
           `Message: ${data.message||''}`
         ];
         const text=encodeURIComponent('New Service Request%0A'+lines.join('%0A'));
-        window.open(`https://wa.me/447846 089611?text=${text}`,'_blank'); // WhatsApp
-        window.location.href=`mailto:homefixrenovation@hotmail.com?subject=Service%20Request%20-%20Homefix%20Renovation&body=${text}`; // Email
+        window.open(`https://wa.me/447846 089611?text=${text}`,'_blank');
+        window.location.href=`mailto:homefixrenovation@hotmail.com?subject=Service%20Request%20-%20Homefix%20Renovation&body=${text}`;
         document.getElementById('formSuccess').style.display='block';
         document.getElementById('formError').style.display='none';
         form.reset();
       });
     })();
 
-    // Hamburger + mobile panel
     (function(){
       const btn = document.getElementById('navToggle');
       const panel = document.getElementById('navPanel');
@@ -484,12 +482,10 @@
       window.addEventListener('resize', ()=>{ if(window.innerWidth>900) close(); });
     })();
 
-    // Robust logo loader: tries multiple common paths/names if the first fails
     (function(){
       var img = document.getElementById('siteLogo');
       if(!img) return;
       var candidates = [
-        'logo-homefix.png',
         'logo-homefix.png',
         'logo-homefix.PNG',
         'Logo-homefix.png',
