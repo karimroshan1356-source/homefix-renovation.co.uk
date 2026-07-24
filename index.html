@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en" dir="ltr">
 <head>
   <meta charset="utf-8" />
@@ -136,11 +136,27 @@
     .section-title{display:flex;align-items:center;justify-content:space-between;margin-bottom:20px}
     .section-title h2{margin:0;font-size:26px}
 
+    /* ===== VIDEO SECTION STYLE ===== */
+    .video-container {
+      position: relative;
+      padding-bottom: 56.25%; /* نسبت تصویر 16:9 استاندارد */
+      height: 0;
+      overflow: hidden;
+      border-radius: var(--radius);
+      background: #000;
+    }
+    .video-container iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+
     /* ===== SLIDER ===== */
     .slider{position:relative;overflow:hidden;border-radius:var(--radius);background:#f8fafc}
-    .slides{display:flex;transition:transform .35s ease}
-    .slide{min-width:100%}
-    .slides {
+    .slides{
       display: flex;
       transition: transform 0.5s ease-in-out;
       width: 100%;
@@ -221,6 +237,7 @@
       <div class="menu-desktop" aria-label="Primary">
         <a href="#services">Services</a>
         <a href="#about">About</a>
+        <a href="#video">Video</a>
         <a href="#gallery">Projects</a>
         <a href="#contact">Contact</a>
         <a class="cta" href="#request">Get a Quote</a>
@@ -238,6 +255,7 @@
         <a class="m-link" href="#home">Home</a>
         <a class="m-link" href="#services">Services</a>
         <a class="m-link" href="#about">About</a>
+        <a class="m-link" href="#video">Video</a>
         <a class="m-link" href="#gallery">Projects</a>
         <a class="m-link" href="#contact">Contact</a>
         <a class="cta m-link" href="#request" style="display:block;text-align:center;margin-top:8px;background:#fff">Get a Quote</a>
@@ -287,6 +305,21 @@
     <div class="card">
       <p><strong>Homefix Renovation</strong> is a registered, full-service construction and renovation company serving <strong>Derby, Nottingham & Derbyshire</strong>.</p>
       <p>From new builds to property refurbishment, extensions and internal alterations — handled by a professional team with transparent pricing.</p>
+    </div>
+  </section>
+
+  <!-- ===== VIDEO SECTION (دقیقاً قبل از عکس‌ها) ===== -->
+  <section id="video" class="container">
+    <div class="section-title"><h2>Watch Our Work</h2><span class="muted">Featured Video</span></div>
+    <div class="card">
+      <div class="video-container">
+        <iframe src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2Fshare%2Fv%2F1C7FQVgZ4D%2F&show_text=false&width=560" 
+                scrolling="no" 
+                frameborder="0" 
+                allowfullscreen="true" 
+                allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share">
+        </iframe>
+      </div>
     </div>
   </section>
 
